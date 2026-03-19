@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Definitiva para Comprar tu Auto Usado - ¡Con Confianza!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #334155; scroll-behavior: smooth; }
+        .btn-primary { background-color: #f59e0b; color: white; padding: 0.75rem 2rem; border-radius: 0.5rem; font-weight: 600; transition: all 0.3s ease; }
+        .btn-primary:hover { background-color: #d97706; transform: scale(1.05); }
+        .card { background-color: white; border-radius: 1rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); padding: 2rem; }
+        .payment-icon { height: 40px; width: auto; border-radius: 0.5rem; }
+        .whatsapp-banner { border: 2px dashed #16a34a; background-color: #f0fdf4; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 px-4 text-center rounded-b-3xl shadow-xl">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl sm:text-6xl font-extrabold mb-6">¡Compra tu Auto Usado con Total Confianza!</h1>
+            <p class="text-lg sm:text-xl mb-8 opacity-90">Evita estafas y asegura tu inversión con la guía de inspección más completa del mercado.</p>
+            <a href="#purchase-section" class="btn-primary text-xl shadow-lg">¡Quiero Mi Guía Ahora!</a>
+        </div>
+    </header>
+
+    <section id="purchase-section" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Adquiere tu Guía por solo $9.99 USD</h2>
+                <p class="text-gray-600">Selecciona tu método de pago preferido para ver las instrucciones.</p>
+            </div>
+
+            <div class="card mb-8">
+                <h3 class="text-xl font-bold mb-6 flex items-center"><span class="bg-blue-600 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 text-sm">1</span> Selecciona tu Método de Pago</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <label class="flex items-center p-4 border rounded-lg cursor-pointer hover:bg-blue-50 transition">
+                        <input type="radio" name="paymentMethod" value="binance" class="form-radio text-blue-600 h-5 w-5">
+                        <span class="ml-3 font-medium">Binance Pay</span>
+                    </label>
+                    <label class="flex items-center p-4 border rounded-lg cursor-pointer hover:bg-blue-50 transition">
+                        <input type="radio" name="paymentMethod" value="pagomovil" class="form-radio text-blue-600 h-5 w-5">
+                        <span class="ml-3 font-medium">Pago Móvil (VE)</span>
+                    </label>
+                    <label class="flex items-center p-4 border rounded-lg cursor-pointer hover:bg-blue-50 transition">
+                        <input type="radio" name="paymentMethod" value="paypal" class="form-radio text-blue-600 h-5 w-5">
+                        <span class="ml-3 font-medium">PayPal</span>
+                    </label>
+                    <label class="flex items-center p-4 border rounded-lg cursor-pointer hover:bg-blue-50 transition">
+                        <input type="radio" name="paymentMethod" value="airtm" class="form-radio text-blue-600 h-5 w-5">
+                        <span class="ml-3 font-medium">AirTM</span>
+                    </label>
+                </div>
+            </div>
+
+            <div id="paymentInstructions" class="card hidden border-2 border-blue-100">
+                <h3 class="text-xl font-bold mb-6 flex items-center"><span class="bg-blue-600 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 text-sm">2</span> Instrucciones de Pago</h3>
+                
+                <div id="binanceDetails" class="method-detail hidden">
+                    <p class="mb-2">Envía <b>$9.99 USDT</b> a nuestro ID de Binance:</p>
+                    <code class="block bg-gray-100 p-3 rounded mb-4 text-center font-mono text-lg">447 617 13</code>
+                    <img src="http://googleusercontent.com/file_content/3" alt="QR Binance" class="mx-auto w-48 mb-4">
+                </div>
+
+                <div id="pagomovilDetails" class="method-detail hidden">
+                    <p class="mb-4 text-amber-700 font-medium">⚠️ Por favor, consulta la tasa BCV del día antes de transferir.</p>
+                    <p>Haz clic en el botón de abajo para solicitar los datos bancarios actualizados por WhatsApp.</p>
+                </div>
+
+                <div id="paypalDetails" class="method-detail hidden">
+                    <p class="mb-2">Envía <b>$9.99 USD</b> (netos) a la cuenta:</p>
+                    <code class="block bg-gray-100 p-3 rounded mb-4 text-center font-mono text-lg">@dayanadiaz96</code>
+                    <p class="text-sm text-gray-500 italic">Por favor, usa la opción "Amigos y Familia".</p>
+                </div>
+
+                <div id="airtmDetails" class="method-detail hidden">
+                    <p class="mb-2">Envía <b>$9.99 USD</b> a la cuenta AirTM:</p>
+                    <p class="bg-gray-100 p-3 rounded mb-4"><b>Vendor ID:</b> ddsuscrpciones70</p>
+                    <img src="http://googleusercontent.com/file_content/2" alt="QR AirTM" class="mx-auto w-48 mb-4">
+                </div>
+
+                <div class="whatsapp-banner p-6 rounded-xl mt-8 text-center">
+                    <p class="text-green-800 font-bold text-lg mb-4">¡IMPORTANTE!</p>
+                    <p class="mb-6 text-green-700 font-medium">Luego de realizar el pago, haz clic en el siguiente botón para enviarnos el comprobante y recibir tu guía de inmediato.</p>
+                    <a id="globalWhatsappBtn" href="#" target="_blank" class="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.55 2 2.04 6.51 2.04 12c0 2.22.73 4.28 1.97 5.94L2 22l4.08-1.07c1.55.88 3.3 1.37 5.08 1.37 5.49 0 9.99-4.51 9.99-10S17.53 2 12.04 2zm5.82 14.54c-.26.6-1.5.9-2.26.86-.76-.04-1.74-.29-2.61-.63-.87-.34-1.85-.88-2.6-1.63-.75-.75-1.29-1.73-1.63-2.6-.34-.87-.59-1.85-.63-2.61-.04-.76.26-2.01.86-2.26.6-.26 1.25-.13 1.63.13.38.26.63.75.88 1.13.26.38.4.88.4 1.38 0 .5-.13 1-.38 1.5-.26.5-.63.88-.88 1.26-.26.38-.26.75 0 1.13.26.38.75.88 1.26 1.26.5.5 1 .75 1.5.88.5.13 1 .13 1.5 0 .5-.13.88-.26 1.26-.38.38-.13.75-.13 1.13 0 .38.26.75.5 1.13.75.38.26.63.5 1.13.75.5.26 1.5.5 2.26.26z"/></svg>
+                        📲 Enviar Comprobante y Recibir Guía
+                    </a>
+                    <p class="mt-4 text-xs text-green-600">Recibirás tu archivo PDF en menos de 5 minutos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8 text-center rounded-t-3xl">
+        <p>&copy; 2026 DDitors. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const SELLER_WHATSAPP_NUMBER = "584129558375";
+        const baseMessage = "Hola, acabo de realizar el pago por la Guía de Compra de Autos Usados ($9.99). Aquí adjunto el comprobante para recibir mi guía. El método usado fue: ";
+
+        const radios = document.querySelectorAll('input[name="paymentMethod"]');
+        const instructionsDiv = document.getElementById('paymentInstructions');
+        const methodDetails = document.querySelectorAll('.method-detail');
+        const whatsappBtn = document.getElementById('globalWhatsappBtn');
+
+        radios.forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                const selected = e.target.value;
+                
+                // Mostrar contenedor de instrucciones
+                instructionsDiv.classList.remove('hidden');
+                
+                // Ocultar todos los detalles y mostrar el seleccionado
+                methodDetails.forEach(detail => detail.classList.add('hidden'));
+                document.getElementById(selected + 'Details').classList.remove('hidden');
+
+                // Actualizar enlace de WhatsApp dinámicamente
+                const fullMessage = baseMessage + selected.toUpperCase();
+                whatsappBtn.href = `https://wa.me/${SELLER_WHATSAPP_NUMBER}?text=${encodeURIComponent(fullMessage)}`;
+                
+                // Scroll suave a las instrucciones
+                instructionsDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+        });
+    </script>
+</body>
+</html>
